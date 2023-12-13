@@ -1,5 +1,5 @@
 # cmsite
-cmsimde template uses mdecycu/cmsimde as submodule
+cmsimde template uses mdecycu/cmsimde as submodulecp2023.41223144.repl.co
 
 On Replit:
 
