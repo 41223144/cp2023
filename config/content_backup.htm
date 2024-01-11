@@ -575,7 +575,10 @@ void draw_korean_flag(gdImagePtr img) {
 <h1>w13</h1>
 <p>雖然上課聽不太懂，但回家研究後了解到gitHub是用來儲存大量程式，方便整理出儲存在內的程式</p>
 <p>也了解到如何用Repilt去寫程式來做圖型，這部分因為是自己上網查的，依靠changpt也了解到如何去解讀畫出來的圖形</p>
-<p>知道顏色需要用RGB三原色去編成各種顏色從0-255去設定顏色等級</p><h1>w6</h1>
+<p>知道顏色需要用RGB三原色去編成各種顏色從0-255去設定顏色等級</p>
+<p>要畫出四邊形或三角形時需要先用gdPoint points[4];去定義這圖型有幾個點再用第一點的座標開始延伸出點2點3點4畫出多邊形。</p>
+<p>圓形則是在python內先定義<span class="hljs-keyword">import</span><span> turtle在設定t = turtle.Turtle()最後用turtle.mainloop()讓其顯示在視窗</span></p>
+<p><span></span></p><h1>w6</h1>
 <pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">// https://en.wikipedia.org/wiki/Flag_of_the_Republic_of_China
 // 內政部國旗參考資料: https://www.moi.gov.tw/cp.aspx?n=10621
 // cc roc_flag_in_gd.c -lgd -lm to link with gd and math library
