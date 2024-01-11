@@ -1,5 +1,21 @@
 <h1>w10-w11</h1>
-<h1>w9</h1>
+<p><span>檢查隨身碟中的網路設定程式, 確認帶有可攜程式環境以及網路設定相關檔案</span></p>
+<p><span>啟動隨身系統之後, 可以透過 rsa private key 以 SSH 取下個人倉儲, 並能啟動編輯後轉檔, 擁有推送回 github 的權限.</span></p>
+<p><span>以個人 IPv6 位址啟動後, 允許分組組員登入修改網頁內容, 並透過組長的 rsa private key 推送回 github.</span></p>
+<p><span>wink_ffmpeg.reg 設定檔案內容:</span></p>
+<pre class="brush:csharp;auto-links:false;toolbar:false" contenteditable="false">Windows Registry Editor Version 5.00
+  
+[HKEY_CURRENT_USER\SOFTWARE\Debugmode]
+  
+[HKEY_CURRENT_USER\SOFTWARE\Debugmode\Wink\Settings]
+"FfmpegPath"="y:\\ffmpeg.exe"</pre>
+<p>分別在"replit"</p>
+<p>必須先在 Github 安裝 Replit Application 授權之後, 再 import 倉儲.</p>
+<p>import 倉儲後, 必須先設定 Run 執行內容, 取下 submodule, 並安裝倉儲編輯所需的模組以及設定 secrets 頁面中的 config 變數後, 才能啟動編輯網頁.</p>
+<p>"1511"</p>
+<p><span>則需要先設定 keys 與 session config, 然後才能將倉儲以 SSH clone 至個人帳號下, 修改個人或分組所分配到的內部連網埠號後, 以 python3 server.py 執行網頁編輯. 也可透過 acp 設法讓動態與靜態網站內容同步</span></p>
+<p>"<span>localhost"</span></p>
+<p><span>可以使用 s1511 中的 private key, 經由 puttygen 轉檔後使用, 以 SSH clone 至個人隨身碟後, 可以利用 cms 啟動編輯網站, 修改內容並轉為靜態網站後, 以 acp 將改版資料新增提交推送到 Github. 若修改倉儲中的 init.py, 置入所在電腦的外部 IPv6 位址, 則可以 cms 啟動後, 修改管理者密碼, 讓其他組員連線至所啟動的動態或靜態網站內容.</span></p><h1>w9</h1>
 <pre class="brush:csharp;auto-links:false;toolbar:false" contenteditable="false"># 讀取學號檔案
 with open("2b_user_list.txt", 'r') as user_file:
     user_lines = user_file.read().splitlines()
